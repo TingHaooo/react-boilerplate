@@ -1,0 +1,8 @@
+{
+  "name": "react-fullstack-boilerplate",
+  "version": "1.0.0",
+  "description": "A react full-stack boilerplate",
+  "main": "index.js",
+  "repository": "https://github.com/TingHaooo/react-fullstack-boilerplate.git",
+  "license": "MIT"
+}
