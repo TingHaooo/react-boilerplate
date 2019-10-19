@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "jsx": "react",
+    "rootDir": "./src",
+    "lib": ["dom", "esnext"],
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+  },
+  "include": [ "./src/**/*", "./src/**/*.json"],
+  "exclude": ["node_modules"]
+}
