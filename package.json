@@ -7,7 +7,11 @@
   "license": "MIT",
   "scripts": {
     "lintStaged": "lint-staged",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "tsc:watch": "tsc --noEmit --watch",
+    "parcel:watch": "parcel src/index.html --port 3000",
+    "dev": "run-p tsc:watch parcel:watch",
+    "build": "parcel build src/index.html"
   },
   "husky": {
     "hooks": {
@@ -32,6 +36,8 @@
     }
   },
   "devDependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
     "eslint": "^6.5.1",
@@ -49,6 +55,8 @@
     "import-sort-parser-typescript": "^6.0.0",
     "import-sort-style-module": "^6.0.0",
     "lint-staged": "^9.5.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.18.2",
     "typescript": "^3.6.4"
   },
