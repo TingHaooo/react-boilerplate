@@ -5,13 +5,16 @@
   "main": "index.js",
   "repository": "https://github.com/TingHaooo/react-fullstack-boilerplate.git",
   "license": "MIT",
+  "homepage": "http://tinghaooo.github.io/react-fullstack-boilerplate",
   "scripts": {
     "lintStaged": "lint-staged",
     "tsc": "tsc --noEmit",
     "tsc:watch": "tsc --noEmit --watch",
     "parcel:watch": "parcel src/index.html --port 3000",
     "dev": "run-p tsc:watch parcel:watch",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
   },
   "husky": {
     "hooks": {
@@ -49,6 +52,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
     "husky": "^3.1.0",
     "import-sort-cli": "^6.0.0",
     "import-sort-parser-babylon": "^6.0.0",
