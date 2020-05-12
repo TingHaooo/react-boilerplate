@@ -1,2 +1,2 @@
-# react-fullstack-boilerplate
-A react fullstack boilerplate
+# react-boilerplate
+A react boilerplate
